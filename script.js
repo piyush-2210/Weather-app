@@ -1,7 +1,7 @@
 let isCelsius = true;
 let currentTemp = null;
 
-const apiKey = "YOUR_API_KEY";
+const apiKey = "8beabf7e312716ab07ba43a1d1ecad81";
 
 function getWeather() {
   const cityInput = document.getElementById("cityInput");
@@ -71,3 +71,4 @@ cityInput.addEventListener("keydown", (event) => {
     getWeather();
   }
 });
+

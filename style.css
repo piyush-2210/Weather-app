@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #020617, #000);
+}
+
+.weather-container {
+  background: linear-gradient(145deg, #020617, #020617dd);
+  color: white;
+  padding: 32px;
+  border-radius: 18px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.weather-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #020617;
+  color: white;
+  border: 1px solid #1e293b;
+}
+
+.search-box input::placeholder {
+  color: #94a3b8;
+}
+
+.search-box input:focus {
+  border-color: #38bdf8;
+}
+
+
+.search-box button {
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
+}
+
+.temp-toggle {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.temp-toggle button {
+  background: rgba(15, 23, 42, 0.6);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.temp-toggle button:hover {
+  background: rgba(56, 189, 248, 0.9);
+  color: black;
+}
+
+
+.weather-result {
+  margin-top: 20px;
+  background: rgba(15, 23, 42, 0.7);
+  padding: 18px;
+  border-radius: 14px;
+  min-height: 100px;
+}
+
+.weather-result p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #e5e7eb;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
